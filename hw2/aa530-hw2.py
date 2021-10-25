@@ -35,4 +35,11 @@ plt.title('Stress Trajectory')
 plt.xlabel('Normal Stress [MPa]')
 plt.ylabel('Shear Stress [MPa]')
 
+# 2.2 - principal stresses and directions of stress tensor
+sigmatensor_2pt2 = np.array([[6.0, -2.0, 0.0],[-2.0, 3.0, 4.0],[0.0,4.0,3.0]])
+evals_2pt2,evecs_2pt2 = np.linalg.eig(sigmatensor_2pt2)
+
+print("The eigenvalues (principal stresses) are", evals_2pt2)
+print("The eigenvectors (principal directions) are\n", evecs_2pt2)
+
 plt.show()
