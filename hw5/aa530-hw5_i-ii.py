@@ -128,25 +128,32 @@ nh_ax[0,1].legend()
 nh_ax[1,0].legend()
 nh_ax[1,1].legend()
 
-# Mooney-Rivlin
-nh_ax[0,0].plot(lambda_sr,sigma11_nh_uni,label='i')
-nh_ax[0,1].plot(lambda_sr,S1_nh_uni,label='ii')
-nh_ax[1,0].plot(lambda_sr,sigma11_nh_bi,label='iii')
-nh_ax[1,1].plot(lambda_sr,S1_nh_bi,label='iv')
+nh_fig.suptitle('Neo-Hookean')
 
-nh_ax[0,0].legend()
-nh_ax[0,1].legend()
-nh_ax[1,0].legend()
-nh_ax[1,1].legend()
+# Mooney-Rivlin
+mr_ax[0,0].plot(lambda_sr,sigma11_nh_uni,label='i')
+mr_ax[0,1].plot(lambda_sr,S1_nh_uni,label='ii')
+mr_ax[1,0].plot(lambda_sr,sigma11_nh_bi,label='iii')
+mr_ax[1,1].plot(lambda_sr,S1_nh_bi,label='iv')
+
+mr_ax[0,0].legend()
+mr_ax[0,1].legend()
+mr_ax[1,0].legend()
+mr_ax[1,1].legend()
+
+mr_fig.suptitle('Mooney-Rivlin')
 
 # Arruda-Boyce
-nh_ax[0,0].plot(lambda_sr,sigma11_nh_uni,label='i')
-nh_ax[0,1].plot(lambda_sr,S1_nh_uni,label='ii')
-nh_ax[1,0].plot(lambda_sr,sigma11_nh_bi,label='iii')
-nh_ax[1,1].plot(lambda_sr,S1_nh_bi,label='iv')
+ab_ax[0,0].plot(lambda_sr,sigma11_nh_uni,label='i')
+ab_ax[0,1].plot(lambda_sr,S1_nh_uni,label='ii')
+ab_ax[1,0].plot(lambda_sr,sigma11_nh_bi,label='iii')
+ab_ax[1,1].plot(lambda_sr,S1_nh_bi,label='iv')
 
-nh_ax[0,0].legend()
-nh_ax[0,1].legend()
-nh_ax[1,0].legend()
-nh_ax[1,1].legend()
+ab_ax[0,0].legend()
+ab_ax[0,1].legend()
+ab_ax[1,0].legend()
+ab_ax[1,1].legend()
+
+ab_fig.suptitle('Arruda-Boyce')
+
 plt.show()
