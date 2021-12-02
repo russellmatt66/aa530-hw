@@ -39,6 +39,12 @@ negtest_ax = plt.axes(projection='3d')
 negtest_ax.plot_surface(ss1_hat,ss2_hat,ss3_hat_p)
 negtest_ax.plot_surface(ss1_hat,ss2_hat,ss3_hat_n)
 negtest_ax.set_title('Von Mises Yield')
+negtest_ax.set_xlabel('$\\tilde{\sigma}_{1}$')
+negtest_ax.set_ylabel('$\\tilde{\sigma}_{2}$')
+negtest_ax.set_zlabel('$\\tilde{\sigma}_{3}$')
+negtest_ax.set_xlim3d([-1.0,1.0])
+negtest_ax.set_ylim3d([-1.0,1.0])
+
 """
 #negtest_ax.contour3D(ss1_hat,ss2_hat,ss3_hat_n)
 negtest_ax.plot_surface(ss1_hat,ss2_hat,ss3_hat_n)

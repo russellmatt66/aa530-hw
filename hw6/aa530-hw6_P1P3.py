@@ -24,6 +24,7 @@ plt.plot(t1,sigma_1)
 plt.title('Viscoelastic material (Maxwell model) subject to a constant strain')
 plt.xlabel('time (s)')
 plt.ylabel('Stress (GPa)')
+plt.xlim([t1[0],t1[nt1-1]])
 
 # Problem 3 - Strain in a viscoelastic material (Kelvin-Voigt)
 sigma_0 = 1.0e-3 # [MPa] -> [GPa]
@@ -35,6 +36,7 @@ plt.plot(t1,eps_3)
 plt.title('Viscoelastic material (Kelvin-Voigt model) subject to a constant stress')
 plt.xlabel('time (s)')
 plt.ylabel('Strain')
+plt.xlim([t1[0],t1[nt1-1]])
 
 plt.show()
  
