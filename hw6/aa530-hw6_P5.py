@@ -5,15 +5,16 @@ Department of Aeronautics & Astronautics
 AA530: Mechanics of Solids HW6
 11/29/21
 Plotting of Tresca yield surface 
+
 O(N^{3}) solution for the yield criteria - doesn't work, 3D coordinate array is wrong size for meshgrid()
-Using analytical expression from notes instead
+Using analytical expression from notes instead - results in 4th-order polynomial; opaque soln from Mathematica Solve[] 
+Writeup 
 """
 import numpy as np
 import matplotlib.pyplot as plt
 
 # Problem 5 - Plot Tresca yield surface
 sigma_yield = 200.0 # [MPa] uniaxial yield stress
-
 
 """
 O(N^3) solution for posterity
